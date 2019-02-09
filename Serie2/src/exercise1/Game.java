@@ -12,7 +12,7 @@ public class Game {
             System.out.println("First dice's value = "+dice1.getValue());
             System.out.println("Second dice's value = "+dice2.getValue());
             if(dice1.getValue() == dice2.getValue()){
-                System.out.println("Gongratulations, You Won the game !!!!");
+                System.out.println("Songratulations, You Won the game !!!!");
             }
             System.out.println();
         }
