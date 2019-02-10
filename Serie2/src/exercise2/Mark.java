@@ -2,7 +2,7 @@ package exercise2;
 
 import java.util.Objects;
 
-public class Mark {
+public class Mark implements Cloneable{
     private float value;
     private String subject;
 

@@ -3,7 +3,7 @@ package exercise2;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Application {
+public class Application implements Cloneable{
 
     private ArrayList<ArrayList<Mark>> marks;
 
