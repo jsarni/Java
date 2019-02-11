@@ -7,6 +7,26 @@ public class Application implements Cloneable{
 
     private ArrayList<ArrayList<Mark>> marks;
 
+    public static void main (String[] args){
+        Application app = new Application();
+
+        app.addMark((float) 12.2,"Java",2);
+        app.addMark((float) 15,"IA",0);
+        app.addMark((float) 18.14,"Maths",0);
+        app.addMark((float) 11,"Algo",0);
+        app.addMark((float) 14.32,"BDD",0);
+        app.addMark((float) 19.54,"SQL",1);
+        app.addMark((float) 13.5,"Java",1);
+        app.addMark((float) 14,"RO",1);
+        app.addMark((float) 16.98,"IA",1);
+
+        app.print();
+
+        System.out.println("Student 1's avg = " + app.average(1));
+
+        System.out.println("Max number of marks = " + app.compute());
+
+    }
     public Application() {
         this.marks = new ArrayList<ArrayList<Mark>>();
     }
