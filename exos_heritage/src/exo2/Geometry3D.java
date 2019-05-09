@@ -2,7 +2,7 @@ package exo2;
 
 import java.util.Objects;
 
-public abstract class Geometry3D implements Geometry {
+public abstract class Geometry3D implements Geometry,Comparable {
 
     private double startX;
     private double startY;
@@ -72,5 +72,17 @@ public abstract class Geometry3D implements Geometry {
         return 0.0;
     }
 
-    public abstract double volume();
+    public double volume(){
+        return 0.0;
+    }
+
+    public int compareTo(Geometry3D ob){
+        if (this.volume() < ob.volume()){
+            return -1;
+        } else if (this.volume() > ob.volume()){
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }

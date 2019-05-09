@@ -2,7 +2,7 @@ package exo2;
 
 import java.util.Objects;
 
-public abstract class Geometry2D implements Geometry {
+public abstract class Geometry2D implements Geometry,Comparable {
 
     private double startX;
     private double startY;
@@ -35,6 +35,16 @@ public abstract class Geometry2D implements Geometry {
     @Override
     public double area() {
         return 0.0;
+    }
+
+    public int compareTo(Geometry2D ob){
+        if (this.area() < ob.area()){
+            return -1;
+        } else if (this.area() > ob.area()){
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
     public abstract double perimetre();
