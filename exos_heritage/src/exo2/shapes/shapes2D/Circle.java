@@ -1,4 +1,6 @@
-package exo2;
+package exo2.shapes.shapes2D;
+
+import exo2.Geometry;
 
 public class Circle extends Ellipsis {
 
@@ -17,12 +19,12 @@ public class Circle extends Ellipsis {
 
     @Override
     public double perimetre() {
-        return 2*getDiameter1()*PI;
+        return 2*getDiameter1()* Geometry.PI;
     }
 
     @Override
     public double area() {
-        return PI * getDiameter1()*getDiameter1();
+        return Geometry.PI * getDiameter1()*getDiameter1();
     }
 
     @Override

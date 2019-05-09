@@ -1,4 +1,4 @@
-package exo2;
+package exo2.shapes.shapes2D;
 
 public class Square extends Rectangle{
 

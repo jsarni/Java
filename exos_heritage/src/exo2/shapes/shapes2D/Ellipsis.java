@@ -1,4 +1,6 @@
-package exo2;
+package exo2.shapes.shapes2D;
+
+import exo2.Geometry;
 
 import java.util.Objects;
 
@@ -65,12 +67,12 @@ public class Ellipsis extends Geometry2D {
 
     @Override
     public double area() {
-        return PI * diameter2 * diameter1;
+        return Geometry.PI * diameter2 * diameter1;
 
     }
 
     @Override
     public double perimetre() {
-        return PI * 12;
+        return Geometry.PI * 12;
     }
 }

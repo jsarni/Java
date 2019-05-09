@@ -1,5 +1,7 @@
 package exo2;
 
+import exo2.shapes.shapes2D.*;
+
 import java.util.ArrayList;
 import java.util.Collections;
 

@@ -1,4 +1,6 @@
-package exo2;
+package exo2.shapes.shapes3D;
+
+import exo2.Geometry;
 
 import java.util.Objects;
 

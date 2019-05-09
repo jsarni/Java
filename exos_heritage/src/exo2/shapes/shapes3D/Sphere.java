@@ -1,4 +1,6 @@
-package exo2;
+package exo2.shapes.shapes3D;
+
+import exo2.Geometry;
 
 import java.util.Objects;
 
@@ -26,12 +28,12 @@ public class Sphere extends Geometry3D{
 
     @Override
     public double area() {
-        return PI*4*rayon*rayon;
+        return Geometry.PI*4*rayon*rayon;
     }
 
     @Override
     public double volume() {
-        return 4 * PI * rayon * rayon * rayon / 3;
+        return 4 * Geometry.PI * rayon * rayon * rayon / 3;
     }
 
     public String getName() {

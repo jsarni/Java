@@ -1,6 +1,5 @@
-package exo2;
+package exo2.shapes.shapes2D;
 
-import java.sql.SQLOutput;
 import java.util.Objects;
 
 public class Rectangle extends Geometry2D{

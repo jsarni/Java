@@ -1,4 +1,6 @@
-package exo2;
+package exo2.shapes.shapes3D;
+
+import exo2.Geometry;
 
 import java.util.Objects;
 
@@ -69,7 +71,7 @@ public class Cylinder extends Geometry3D {
 
     @Override
     public double area() {
-        return 2*PI*rayon*hauteur;
+        return 2* Geometry.PI*rayon*hauteur;
     }
 
     @Override
@@ -80,6 +82,6 @@ public class Cylinder extends Geometry3D {
 
     @Override
     public double volume() {
-        return PI*rayon*rayon*hauteur;
+        return Geometry.PI*rayon*rayon*hauteur;
     }
 }
