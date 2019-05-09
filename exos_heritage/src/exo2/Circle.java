@@ -2,8 +2,11 @@ package exo2;
 
 public class Circle extends Ellipsis {
 
-    public Circle(double X, double Y, double diameter1) {
+    private String name;
+
+    public Circle(String name,double X, double Y, double diameter1) {
         super(X, Y, diameter1, diameter1);
+        this.name = name;
     }
 
     @Override
@@ -25,5 +28,13 @@ public class Circle extends Ellipsis {
     @Override
     public String toString() {
         return "Circle{" +"\n" + "starX = " +getStartX()+ " starY = " + getStartY() + " diametre = " + getDiameter1() + " }";
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

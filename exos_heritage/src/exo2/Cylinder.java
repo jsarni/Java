@@ -4,17 +4,27 @@ import java.util.Objects;
 
 public class Cylinder extends Geometry3D {
 
+    private String name;
     private double rayon;
     private double hauteur;
 
-    public Cylinder(double startX, double startY, double startZ, double rayon, double hauteur) {
+    public Cylinder(String name,double startX, double startY, double startZ, double rayon, double hauteur) {
         super(startX, startY, startZ);
         this.rayon = rayon;
         this.hauteur = hauteur;
+        this.name = name;
     }
 
     public double getRayon() {
         return rayon;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setRayon(double rayon) {

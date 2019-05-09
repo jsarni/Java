@@ -4,11 +4,13 @@ import java.util.Objects;
 
 public class Sphere extends Geometry3D{
 
+    private String name;
     private double rayon;
 
-    public Sphere(double startX, double startY, double startZ, double rayon) {
+    public Sphere(String name, double startX, double startY, double startZ, double rayon) {
         super(startX, startY, startZ);
         this.rayon = rayon;
+        this.name = name;
     }
 
     @Override
@@ -25,6 +27,14 @@ public class Sphere extends Geometry3D{
     @Override
     public double volume() {
         return 4 * PI * rayon * rayon * rayon / 3;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getRayon() {
