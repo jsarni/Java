@@ -49,6 +49,11 @@ public class Rectangle extends Geometry2D{
     }
 
     @Override
+    public int compareTo(Geometry2D ob) {
+        return super.compareTo(ob);
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

@@ -20,6 +20,11 @@ public class Sphere extends Geometry3D{
     }
 
     @Override
+    public int compareTo(Geometry3D ob) {
+        return super.compareTo(ob);
+    }
+
+    @Override
     public double area() {
         return PI*4*rayon*rayon;
     }

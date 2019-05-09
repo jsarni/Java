@@ -50,6 +50,11 @@ public class Cylinder extends Geometry3D {
     }
 
     @Override
+    public int compareTo(Geometry3D ob) {
+        return super.compareTo(ob);
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), rayon, hauteur);
     }
